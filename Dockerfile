@@ -14,6 +14,6 @@ RUN apk add supervisor
 COPY supervisor/meedu-queue.ini /etc/supervisor.d/meedu-queue.ini
 
 # 覆盖php-fpm的配置
-COPY php/php-fpm.d/ww.conf /usr/local/etc/php-fpm.d/www.conf
+COPY php/php-fpm.d/www.conf /usr/local/etc/php-fpm.d/www.conf
 
 ENTRYPOINT supervisord && nginx && php-fpm
