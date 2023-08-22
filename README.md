@@ -28,10 +28,10 @@ git clone https://github.com/Meedu/docker-meedu-light.git docker-meedu-light
 
 ```
 docker-meedu-light
-|-dist
-|--pc
-|--h5
-|--backend
+|--dist
+|----pc
+|----h5
+|----backend
 ```
 
 其中 `pc` 目录就是 `PC` 端口编译出来的 `dist` 目录；`h5` 目录就是 `H5` 端口编译出来的 `dist` 目录；`backend` 就是后台管理界面编译出来的 `dist` 。需要注意的是，这三个端口编译配置的 `APP_URL` 均为 `/api/` 。
